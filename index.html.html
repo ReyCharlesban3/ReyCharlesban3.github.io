@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	font-family: helvetica;
+	font: 100%/1.4 Helvetica,;
+	background-image: url("gamer pat.jpg"), -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(235,223,223,1.00) 60.62%,rgba(170,120,120,1.00) 100%);
+	background-image: url("gamer pat.jpg"), -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(235,223,223,1.00) 60.62%,rgba(170,120,120,1.00) 100%);
+	background-image: url("gamer pat.jpg"), -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(235,223,223,1.00) 60.62%,rgba(170,120,120,1.00) 100%);
+	background-image: url("gamer pat.jpg"), linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(235,223,223,1.00) 60.62%,rgba(170,120,120,1.00) 100%);
+	color: #FFFFFF;
+}
+
+/* Style the tab */
+.tab {
+	overflow: hidden;
+	border: 0px solid #ccc;
+	background-color: #FFFFFF;
+	background-image: url(../index%20-%20Copy%20-%20Copy/360_F_341837771_fXihh3dLyus28uE84XcqhqcN5Hh5uv8Q.jpg)
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.5s;
+  font-size: 17px;
+  background-image; 
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #A8A8A8;
+  font: 100%/1.4 Ariel,
+  color: #7900FF; 	
+  color: #FFFFFF;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	background-color: #ccc;
+	background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(79,71,78,1.00) 49.22%,rgba(255,255,255,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(79,71,78,1.00) 49.22%,rgba(255,255,255,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(0,0,0,1.00) 0%,rgba(79,71,78,1.00) 49.22%,rgba(255,255,255,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(0,0,0,1.00) 0%,rgba(79,71,78,1.00) 49.22%,rgba(255,255,255,1.00) 100%);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+#myDiv {
+  border: 0px solid #00C3FF;
+  margin: 0.5cm 0.5cm;
+}
+
+img {
+	background-color:;
+	vertical-align: middle;
+	border-color: #BD4B4C;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,188,188,1.00) 50.78%,rgba(255,151,151,1.00) 79.79%,rgba(255,0,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,188,188,1.00) 50.78%,rgba(255,151,151,1.00) 79.79%,rgba(255,0,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(255,188,188,1.00) 50.78%,rgba(255,151,151,1.00) 79.79%,rgba(255,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(255,188,188,1.00) 50.78%,rgba(255,151,151,1.00) 79.79%,rgba(255,0,0,1.00) 100%);
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+<h2><center></center></h2>
+
+<tb><center><img src="welcome1.gif" width="300"></center></tb>
+<div class="tab" id="myDiv" class="glow">
+  <button class="tablinks" onclick="openCity(event, 'Introduction')" >Introduction</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Experience</button>
+  <button class="tablinks" onclick="openCity(event, 'Awards')">Seminars and Awards</button>
+  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'SocialMedia')">Social Media</button>
+
+</div>
+
+<div id="Introduction" class="tabcontent">
+<h1>
+  <h3><center>Name: REY CHARLES C.  BANTULO</center></h3>
+  <p>
+<li>Address (City)    :  General Santos  C i t y</li>
+<li>Res./Mobile Nos: 552-3096 / 09455817996</li>
+<li>Email Address   :  Rey_advanz3@hotmail.com</li>
+<li>Date of Birth      :  14 May 1995</li>
+<li>Civil Status        :  S i n g l e</li>
+<tb><center><img src="handsome.png"></center></tb>
+
+</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3><center>Experience</center></h3>
+  <p><li>Call Center Agent - Six Eleven Global Solutions and Services Inc.GSC
+                                 June-Aug. 2020
+</li>
+<li>Volunteer  -Repacking & Distribution of  Relief Goods  (Bgy. San Isidro,GSC)
+March - May, 2020
+</li>
+<li>OJT at ABS-CBN Davao Station. Aug 2015-Oct 2015 (“Barangayan Events”, “Agri Ka Dito” and Pilipinas Got Talent as Pre and Post Production Staff.) Matina Davao Shrine Hills, Davao City</li>
+<br></br>
+<tb><center><img src="experience1.jpg" width="800"></center></tb>
+</p> 
+</div>
+
+<div id="Awards" class="tabcontent">
+  <h3><center>Seminars and Awards</center></h3>
+  <p>
+  <li>"DIGITAL MARKETING SEMINAR" (DTI-GSC)March 20,2020</li>
+  <li>"DIGITAL ENTREPRENEURSHIP SEMINAR" (DTI-GSCMarch 20,2020)</li>
+<li>"HOW TO BECOME A MONEY MAGNET" (BY: JOHN CALUB) January 20, 2018 –CAP Auditorium, Davao City
+</li>
+<li>Gawad Pluma Award for Best in Editorial Cartoon-October 11, 2014</li>
+<li>Got an Article published in Sunstar’s Sunday Essays Entitled-“Wasted Talents”-September 20, 2014 Edition</li>
+<li>Certificate of Recognition For Print Advertisement-April 1, 2014</li>
+<li>"Web Development with HTML, CSS & JAVASCRIPT for Beginners"
+via zoom video-conferencing application</li>
+<br></br>
+<tb><center><img src="award2.jpg" width="600"></center></tb>
+</p>
+</div>
+
+<div id="Education" class="tabcontent">
+  <h3><center>Education</center></h3>
+  <p>
+  <li>Elementary:Stratford International School-General Santos City-2006-2007</li>
+  <li>Secondary:Notre Dame Dadiangas University-IBED-Sci.Curr Gen.Santos C i t y  1st Yr High School - 2007-2008, Seri Mulia Sarjana  School-Brunei Darussalam Graduated 2009-2012  </li>
+  <li>College:Ateneo de Davao University AB-Mass Communication-Minor in Psychology Graduated  April 1, 2017 CS Prof. Eligible (Aug.2017) </li>
+  <li>Earned Units:Brokenshire College Socsksargen, Inc.,General Santos City 48 Secondary Education Units October 2018-May 2019 LET Passer (Sept. 29, 2019)</li>
+  <br></br>
+  <tb><center><img src="school3.jpg" width="600"></center></tb>
+
+
+
+</p> 
+</div>
+
+<div id="SocialMedia" class="tabcontent">
+  <h3><center>Facebook</center></h3>
+  <p>
+  <li></li>
+  <br></br>
+  <tb><center><a href="https://www.facebook.com/SpectreBan3/"><img src="1515764.png" width="100"></a></center></tb>
+</p> 
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
